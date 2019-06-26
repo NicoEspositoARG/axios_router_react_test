@@ -13,10 +13,10 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 axios.interceptors.request.use(request => {
     //could define global configurations here too
-    console.log(request)
+    // console.log(request)
     return request;
 }, error => {
-    console.log(error)
+    // console.log(error)
     return Promise.reject(error);
 });
 
